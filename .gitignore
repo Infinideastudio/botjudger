@@ -6,4 +6,4 @@ runner/koishi.exe
 runner/koishi.tmp
 runner/judger
 out.txt
-config.php
+runner/judge.exe
