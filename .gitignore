@@ -4,6 +4,7 @@ runner/satori.exe
 runner/satori.tmp
 runner/koishi.exe
 runner/koishi.tmp
+runner/judge.exe
 runner/judger
 out.txt
 runner/judge.exe
