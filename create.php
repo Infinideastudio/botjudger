@@ -1,4 +1,6 @@
 <?php
+include "function.php";
+include "config.php";
 function getfiles($path){
 	foreach(scandir($path) as $afile)
 	{

@@ -1,4 +1,6 @@
 <?php
+include "function.php";
+include "config.php";
 function getfiles($gg){
 	$path="./code/$gg";
 	foreach(scandir($path) as $afile)

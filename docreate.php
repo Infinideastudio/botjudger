@@ -1,4 +1,6 @@
 <?php
+include "function.php";
+include "config.php";
 function getrandstring($length=16){
     $str = null;
     $strPol = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz";
@@ -19,6 +21,11 @@ function getrandstring($length=16){
 //system(".\\runner\\run.bat $key.txt >nul 2>nul");
 $a=$_POST['koishi'];
 $b=$_POST['satori'];
+if(!isStringLegal($a) || !isStringLegal($b))
+{
+	echo "FUCK YOU";
+	exit(0);
+}
 $map=$_POST['map'];
 file_put_contents("task.txt","$a $b $key $map\n",FILE_APPEND);
 echo "已创建 KEY为".$key;
